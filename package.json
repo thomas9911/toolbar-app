@@ -13,13 +13,17 @@
 		"format:check": "npm run prettier-base -- --check src",
 		"format": "npm run prettier-base -- --write src",
 		"prettier-base": "prettier --plugin-search-dir . --svelte-strict-mode",
-		"tauri-dev": "cargo tauri dev",
-		"tauri-build": "cargo tauri build"
+		"tauri-dev:rust": "cargo tauri dev",
+		"tauri-build:rust": "cargo tauri build",
+		"tauri-dev": "npm run tauri dev",
+		"tauri-build": "npm run tauri build",
+		"tauri": "tauri"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^1.0.0-next.50",
 		"@sveltejs/kit": "^1.5.0",
+		"@tauri-apps/cli": "^1.4.0",
 		"@typescript-eslint/eslint-plugin": "^5.59.0",
 		"@typescript-eslint/parser": "^5.59.0",
 		"eslint": "^8.43.0",
